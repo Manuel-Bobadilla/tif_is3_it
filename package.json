@@ -5,7 +5,7 @@
   "main": "it_front.spec.js",
   "type": "module",
   "scripts": {
-    "test": "px mocha --timeout 10000 it_front.spec.js"
+    "test": "npx mocha --reporter mocha-junit-reporter --no-timeouts it_front.spec.js"
   },
   "repository": {
     "type": "git",
