@@ -17,6 +17,21 @@ suite(function (env) {
 
     after(async () => await driver.quit());
 
+    it("Iniciar Cero", async function () {
+      await driver.get(FRONT_URL);
+
+      let texto = await driver.findElement(By.id("texto"));
+      let botonReiniciar = await driver.findElement(By.id("cero"));
+
+      await botonReiniciar.click();
+
+      await sleep(2000);
+
+      let valor = await texto.getAttribute("value");
+      assert.equal("0", valor)
+
+    })
+
     it("Probar sumar", async function () {
       await driver.get(FRONT_URL);
 
