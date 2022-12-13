@@ -1,0 +1,26 @@
+{
+  "name": "tif_it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "it_front.spec.js",
+  "type": "module",
+  "scripts": {
+    "test": "px mocha --timeout 10000 it_front.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manuel-Bobadilla/tif_is3_it.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manuel-Bobadilla/tif_is3_it/issues"
+  },
+  "homepage": "https://github.com/Manuel-Bobadilla/tif_is3_it#readme",
+  "dependencies": {
+    "mocha": "^10.2.0",
+    "mocha-junit-reporter": "^2.2.0",
+    "selenium-webdriver": "^4.7.0"
+  }
+}
